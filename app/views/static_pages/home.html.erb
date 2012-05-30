@@ -1,9 +1,11 @@
-<% provide(:title, 'Home') %>
+<div class="center hero-unit">
+  <h1>Welcome to Patient Strength</h1>
 
+  <h2>
+    This is the home page for Patient Strength, the site where patients can give updates, and express their thoughts to their closest family and frineds. 
+  </h2>
 
-    <h1>Patient Strength</h1>
-    <p>
-        This is the home page for the
-patient strength website
-    </p>
- 
+  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
