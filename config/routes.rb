@@ -1,9 +1,22 @@
 RayWuPatientProject::Application.routes.draw do
+  resources :microposts
+
+  #get "microposts/new"
+
+#  get "microposts/index"
+
+  #get "microposts/show"
+
+
    root to: 'static_pages#home'
    
   match '/help',    to: 'static_pages#help'
   match '/about',   to: 'static_pages#about'
   match '/contact', to: 'static_pages#contact'
+  match '/newpost', to: 'microposts#new'
+  match '/index',   to: 'microposts#index'
+  match '/showpost', to: 'microposts#show'
+  match '/edit',      to: 'microposts#edit'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

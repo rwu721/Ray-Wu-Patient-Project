@@ -1,0 +1,21 @@
+<% provide(:title, 'New Post') %>
+
+<h1>Create New Post</h1>
+<div class = "row" >
+	<div class = "span 6 offset3">
+		<%= form_for(@micropost) do |f| %>
+
+		<%= f.label :text %>
+		<%= f.text_field :text %>
+
+		<%= f.submit "Create new post", class:
+		"btn btn-large btn-primary" %>
+
+		<% end %>
+
+	</div>
+</div>
+
+
+	
+
