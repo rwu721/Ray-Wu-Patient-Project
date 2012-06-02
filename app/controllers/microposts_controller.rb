@@ -1,4 +1,6 @@
 class MicropostsController < ApplicationController
+  before_filter :signed_in_user
+
   def new
   	@micropost = Micropost.new
 
@@ -47,5 +49,10 @@ class MicropostsController < ApplicationController
   	redirect_to index_path
 
   end
+
+  private
+    def signed_in_user
+      redirect_to '/users/sign_in', notice: "Please sign in." unless user_signed_in?
+    end
 
 end

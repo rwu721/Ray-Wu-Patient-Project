@@ -19,6 +19,7 @@ RayWuPatientProject::Application.routes.draw do
   match '/index',   to: 'microposts#index'
   match '/showpost', to: 'microposts#show'
   match '/edit',      to: 'microposts#edit'
+  #match '/signin',     to: 'users#sign_in'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
