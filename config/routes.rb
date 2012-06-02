@@ -1,4 +1,6 @@
 RayWuPatientProject::Application.routes.draw do
+  devise_for :users
+
   resources :microposts
 
   #get "microposts/new"
